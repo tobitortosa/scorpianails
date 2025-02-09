@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  color: #d1d5db;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
