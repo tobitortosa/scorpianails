@@ -4,7 +4,7 @@
 }
 
 .title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 300;
   margin-bottom: 2rem;
   text-align: center;
@@ -24,10 +24,11 @@
 }
 
 .description {
-  color: #9ca3af;
+  color: #a8afbd;
   line-height: 1.625;
   margin-bottom: 1.5rem;
   text-align: center;
+  font-size: 16px;
 }
 
 .list {
@@ -38,14 +39,18 @@
 
 .listItem {
   display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
+  flex-direction: column;
+}
+
+.listItem strong{
+  color: #c4c4c4;
 }
 
 .listItemIcon {
   color: #6b7280;
   margin-right: 0.5rem;
   margin-top: 6px;
+  font-size: 12px;
 }
 
 .imageGrid {
