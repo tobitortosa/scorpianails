@@ -42,6 +42,7 @@
   color: white;
   font-weight: bold;
   font-size: 17px;
+  text-align: center;
 }
 
 .input {
@@ -78,29 +79,10 @@
   margin-bottom: 20px;
 }
 
-
 .contactoCliente{
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-}
-
-.contactoCliente input{
-  width: 30%;
-  min-width: 270px;
-  font-size: 15px;
-  outline: none;
-  padding: 8px 0px;
-  padding-left: 10px;
-  border-radius: 10px;
-}
-
-.contactoCliente label{
-  margin-bottom: 4px;
-  font-size: 17px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-left: 5px;
 }
 
 .uploadContainer {
@@ -139,4 +121,85 @@
   font-weight: bold;
   color: #4caf50;
   margin-top: 10px;
+}
+
+.mailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 300px;
+}
+
+.mailLabel {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mailInput {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.mailInput:focus {
+  box-shadow: 0 0 5px rgba(0, 150, 250, 0.5);
+}
+
+.mailValid {
+  border-color: green;
+}
+
+.mailInvalid {
+  border-color: rgb(218, 0, 0);
+}
+
+.mailErrorText {
+  color: rgb(218, 0, 0);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.phoneContainer {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.phoneLabel {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.phoneInput {
+  padding: 10px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.phoneInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.phoneValid {
+  border-color: green;
+}
+
+.phoneInvalid {
+  border-color: red;
+}
+
+.phoneError {
+  color: rgb(218, 0, 0);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0px;
 }
