@@ -1,5 +1,7 @@
+import InfoCard from "../infoCard/InfoCard";
 import styles from "./ProductInfo.module.css";
-import { FaCircle } from "react-icons/fa";
+import { FaGift } from "react-icons/fa";
+import { AiFillSafetyCertificate } from "react-icons/ai";
 
 function ProductInfo() {
   return (
@@ -7,6 +9,7 @@ function ProductInfo() {
       <h1 className={styles.title} style={{ fontSize: "27px" }}>
         CURSO DE MANICURÍA PROFESIONAL
       </h1>
+
       <h3 className={styles.title} style={{ fontStyle: "italic" }}>
         Tu puerta de entrada al mundo de las uñas
       </h3>
@@ -20,70 +23,64 @@ function ProductInfo() {
             te ofrezco todos los conocimientos que necesitas para comenzar con
             confianza y ofrecer servicios de alta calidad.
           </p>
-          <h4 style={{ fontSize: "17px" }}>Qué incluye este curso?</h4>
+          <h4 style={{ fontSize: "20px", textAlign: "center" }}>
+            Qué incluye este curso?
+          </h4>
 
           <ul className={styles.list}>
-            <li className={styles.listItem}>
-              <strong>Anatomía de las uñas:</strong>
-              <p>
-                Entiende cómo funcionan las uñas y cómo cuidarlas adecuadamente
-                para garantizar resultados duraderos y saludables.
-              </p>
-            </li>
-            <li className={styles.listItem}>
-              <strong>Manicuria rusa:</strong>
-              <p>
-                Aprende paso a paso cómo y por qué usar esta técnica, que se ha
+            <InfoCard
+              title="Anatomía de las uñas:"
+              description="Entiende cómo funcionan las uñas y cómo cuidarlas adecuadamente
+                para garantizar resultados duraderos y saludables."
+              img="1.jpg"
+            />
+            <InfoCard
+              title="Manicuria rusa:"
+              description="Aprende paso a paso cómo y por qué usar esta técnica, que se ha
                 convertido en un referente en la industria por sus resultados
-                impecables.
-              </p>
-            </li>
-            <li className={styles.listItem}>
-              <strong>Esmaltado semipermanente:</strong>
-              <p>
-                Conoce el proceso detallado de aplicación y mantenimiento para
-                que tus clientes disfruten de uñas perfectas por más tiempo.
-              </p>
-            </li>
-            <li className={styles.listItem}>
-              <strong>Nail art (diseños de uñas en tendencia):</strong>
-              <p>
-                Accede a las últimas tendencias en diseños de uñas, ideales para
-                sorprender a tus clientes y mantenerte a la vanguardia.
-              </p>
-            </li>
-            <li className={styles.listItem}>
-              <strong>Retiro seguro del producto:</strong>
-              <p>
-                Te enseño cómo retirar correctamente el esmaltado sin dañar las
-                uñas naturales, un paso clave en la manicura profesional.
-              </p>
-            </li>
-            <li className={styles.listItem}>
-              <strong>Lista de materiales recomendados:</strong>
-              <p>
-                Te proporciono una lista con los mejores productos y marcas del
+                impecables."
+              img="7.jpg"
+            />
+            <InfoCard
+              title="Esmaltado semipermanente:"
+              description="Conoce el proceso detallado de aplicación y mantenimiento para
+                que tus clientes disfruten de uñas perfectas por más tiempo."
+              img="3.jpeg"
+            />
+            <InfoCard
+              title="Nail art (Tendencias):"
+              description="Accede a las últimas tendencias en diseños de uñas, ideales para
+                sorprender a tus clientes y mantenerte a la vanguardia."
+              img="4.jpeg"
+            />
+            <InfoCard
+              title="Retiro seguro del producto:"
+              description="Te enseño cómo retirar correctamente el esmaltado sin dañar las
+                uñas naturales, un paso clave en la manicura profesional."
+              img="5.jpg"
+            />
+            <InfoCard
+              title="Materiales recomendados:"
+              description="Te proporciono una lista con los mejores productos y marcas del
                 mercado, con mis recomendaciones profesionales para que ahorres
                 tiempo y dinero al elegir los productos adecuados para tu
-                negocio.
-              </p>
-            </li>
+                negocio."
+              img="8.jpg"
+            />
           </ul>
           <div style={{ textAlign: "center", fontWeight: "bold" }}>
-            <p>
+            <FaGift style={{fontSize: "35px" }}/>
+            <p style={{ marginBottom: "25px" }}>
               Ademas, como bono adicional, recibirás un regalo sorpresa, ¡algo
               especial para ti!
             </p>
+            <AiFillSafetyCertificate style={{fontSize: "35px" }}/>
             <p>
               Y lo mejor de todo, al completar el curso recibirás un certificado
               de participación, que avalará tu formación y te permitirá comenzar
               a ofrecer tus servicios con total confianza y profesionalismo.
             </p>
-            <p>
-              No pierdas la oportunidad de formarte con una guía completa para
-              arrancar tu propio negocio de manicura de la manera correcta.
-            </p>
-            <p style={{ fontSize: "18px" }}>
+            <p style={{ fontSize: "20px" }}>
               ¡Da el primer paso hacia tu éxito!
             </p>
           </div>
