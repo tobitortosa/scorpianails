@@ -21,8 +21,7 @@ const MercadoPagoWallet = () => {
     const createPreferenceIdFromAPI = async () => {
         const response = await axios.post(createPreferenceIdEndpoint, {
             title: "Curso Manicuria Profecional Scorpianails",
-            // unit_price: import.meta.env.VITE_PRECIO,
-            unit_price: 2,
+            unit_price: import.meta.env.VITE_PRECIO,
             quantity: 1,
             email: localStorage.getItem("email"),
             telefono: localStorage.getItem("telefono")
