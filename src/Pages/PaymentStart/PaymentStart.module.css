@@ -1,0 +1,175 @@
+.app {
+    min-height: 100vh;
+    background-color: #111827;
+    color: #d1d5db;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bg {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.75)), url('../../assets/bgIcon.png');
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.main {
+    padding: 2rem 1rem;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#volver {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+    color: grey;
+}
+
+#volver:hover{
+    text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+    .main {
+        padding: 3rem 2rem;
+    }
+}
+
+.contactoCliente h3 {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.contactoCliente {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.mailContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 300px;
+}
+
+.mailLabel {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.mailInput {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.mailInput:focus {
+    box-shadow: 0 0 5px rgba(0, 150, 250, 0.5);
+}
+
+.mailValid {
+    border-color: green;
+}
+
+.mailInvalid {
+    border-color: rgb(218, 0, 0);
+}
+
+.mailErrorText {
+    color: rgb(218, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.phoneContainer {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.phoneLabel {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.phoneInput {
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.phoneInput:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.phoneValid {
+    border-color: green;
+}
+
+.phoneInvalid {
+    border-color: red;
+}
+
+.phoneError {
+    color: rgb(218, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.container {
+    text-align: center;
+}
+
+.comprar {
+    padding: 15px 90px;
+    background-color: #00e408e0;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .2s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.comprar:hover {
+    background-color: #00c006e0;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.comprarDeshabilitado {
+    padding: 15px 90px;
+    background-color: #00e408e0;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .2s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}

@@ -1,0 +1,41 @@
+.section {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #f3f4f6;
+}
+
+.formContainer {
+    background-color: #1f2937;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    opacity: .85;   
+}
+
+.comprar{
+    padding: 15px 90px;
+    background-color: #00e408e0;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .2s;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.comprar:hover{
+    background-color: #00c006e0;
+    transition: .2s;
+    cursor: pointer;
+}

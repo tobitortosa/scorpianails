@@ -8,10 +8,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.bg{
+.bg {
   position: relative;
   width: 100%;
-  height: 100%; /* Ajusta según necesites */
+  height: 100%;
+  /* Ajusta según necesites */
   background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.75)), url('./assets/bgIcon.png');
   background-position: center;
   background-repeat: repeat;
@@ -27,3 +28,10 @@
   }
 }
 
+#title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #f3f4f6;
+}

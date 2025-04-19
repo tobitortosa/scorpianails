@@ -4,6 +4,7 @@ import ContactOptions from "./components/ContactOption/ContactOption.jsx";
 import PaymentForm from "./components/PaymentForm/PaymentForm.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import styles from "./App.module.css";
+import PaymentFormNew from "./components/PaymentForm/PaymentFormNew.jsx";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
         <Header />
         <main className={`${styles.main} container`}>
           <ProductInfo />
+          <h2 id={styles.title}>¿Tienes preguntas? Contáctanos</h2>
           <ContactOptions />
-          <PaymentForm />
+          <PaymentFormNew />
         </main>
         <Footer />
       </div>

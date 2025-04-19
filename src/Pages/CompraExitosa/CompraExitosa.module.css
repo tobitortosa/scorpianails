@@ -1,0 +1,43 @@
+.app {
+    min-height: 100vh;
+    background-color: #111827;
+    color: #d1d5db;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bg {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.75)), url('../../assets/bgIcon.png');
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.main {
+    padding: 2rem 1rem;
+    min-height: 650px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h4{
+    text-align: center;
+}
+
+#volver {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+    color: grey;
+}
+
+#volver:hover{
+    text-decoration: underline;
+}
