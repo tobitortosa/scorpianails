@@ -8,14 +8,12 @@ import './index.css'
 import PaymentEnd from './Pages/PaymentEnd/PaymentEnd.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter>
-      <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/comprar-primera-parte" element={<PaymentStart />} />
-          <Route path="/comprar-segunda-parte" element={<PaymentEnd />} />
-          <Route path="/compra-exitosa" element={<CompraExitosa />} />
-      </Routes>
-    </BrowserRouter>
-  </StrictMode>
+  <BrowserRouter basename="/">
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/comprar-primera-parte" element={<PaymentStart />} />
+      <Route path="/comprar-segunda-parte" element={<PaymentEnd />} />
+      <Route path="/compra-exitosa" element={<CompraExitosa />} />
+    </Routes>
+  </BrowserRouter>
 )
