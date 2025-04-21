@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import CompraExitosa from './Pages/CompraExitosa/CompraExitosa.jsx'
 import './index.css'
 import PaymentEnd from './Pages/PaymentEnd/PaymentEnd.jsx'
+import AdminLogin from './Pages/AdminLogin/AdminLogin.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter basename="/">
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/comprar-primera-parte" element={<PaymentStart />} />
       <Route path="/comprar-segunda-parte" element={<PaymentEnd />} />
       <Route path="/compra-exitosa" element={<CompraExitosa />} />
+      <Route path="/admin" element={<AdminLogin />} />
     </Routes>
   </BrowserRouter>
 )
