@@ -2,19 +2,26 @@ import styles from "./PaymentStart.module.css";
 import Footer from "../../components/Footer/Footer";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import MercadoPagoWallet from "../../components/mercado-pago-checkouts/MercadoPagoWallet";
-import { GiScorpion } from "react-icons/gi";
 
 function PaymentStart() {
     const [email, setEmail] = useState("");
     const [isEmailValid, setIsEmailValid] = useState(false);
+    const [email2, setEmail2] = useState("");
+    const [isEmail2Valid, setIsEmail2Valid] = useState(false);
     const [phone, setPhone] = useState("");
     const [isPhoneValid, setIsPhoneValid] = useState(false);
 
     const validateEmail = (value) => {
         const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         setIsEmailValid(regex.test(value));
+        setIsEmail2Valid(value === email2);
     };
+
+
+    const validateEmail2 = (value) => {
+        setIsEmail2Valid(email === value);
+    };
+
 
     const validatePhone = (value) => {
         const regex = /^(\+\d{1,3}\s?)?\d{1,4}\s?\d{4,5}\s?\d{4}$/;
@@ -34,7 +41,7 @@ function PaymentStart() {
                     <div className={styles.container}>
 
                         <div className={styles.contactoCliente}>
-                            <h2 style={{ fontSize: "20px" }}>Primer paso:</h2>
+                            <h2 style={{ fontSize: "20px", marginTop: "15%" }}>Primer paso:</h2>
                             <h3 style={{ fontSize: "16px" }}>
                                 Ingresa un mail y un numero de telefono donde vas a querer recibir
                                 la guia
@@ -51,11 +58,30 @@ function PaymentStart() {
                                     }}
                                     placeholder="ejemplo@email.com"
                                     className={`${styles.mailInput} ${isEmailValid ? styles.mailValid : styles.mailInvalid
-                                    }`}
+                                        }`}
                                 />
                                 {!isEmailValid && (
                                     <p className={styles.mailErrorText}>
                                         Ingresa un correo válido.
+                                    </p>
+                                )}
+                            </div>
+
+                            <div style={{marginTop: "20px"}} className={styles.mailContainer}>
+                                <label className={styles.mailLabel}>Reingresar Email</label>
+                                <input
+                                    type="email"
+                                    value={email2}
+                                    onChange={(e) => {
+                                        setEmail2(e.target.value);
+                                        validateEmail2(e.target.value);
+                                    }}
+                                    className={`${styles.mailInput} ${isEmail2Valid ? styles.mailValid : styles.mailInvalid
+                                        }`}
+                                />
+                                {!isEmail2Valid && (
+                                    <p className={styles.mailErrorText}>
+                                        El email reingresado no coincide.
                                     </p>
                                 )}
                             </div>
@@ -71,7 +97,7 @@ function PaymentStart() {
                                     }}
                                     placeholder="11 1234-5678"
                                     className={`${styles.phoneInput} ${isPhoneValid ? styles.phoneValid : styles.phoneInvalid
-                                    }`}
+                                        }`}
                                 />
                                 {!isPhoneValid && (
                                     <p className={styles.phoneError}>
@@ -85,7 +111,7 @@ function PaymentStart() {
                             </div>
                         </div>
                         <div>
-                            {(isEmailValid && isPhoneValid) ?
+                            {(isEmailValid && isEmail2Valid && isPhoneValid) ?
                                 <Link to="/comprar-segunda-parte" onClick={handleSubmit} className={styles.comprar}>Continuar al pago</Link> :
                                 <Link className={styles.comprarDeshabilitado}>Continuar al pago</Link>
                             }
