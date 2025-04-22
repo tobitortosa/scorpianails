@@ -20,7 +20,7 @@ const MercadoPagoWallet = () => {
 
     const createPreferenceIdFromAPI = async () => {
         const response = await axios.post(createPreferenceIdEndpoint, {
-            title: "Curso Manicuria Profecional Scorpianails",
+            title: "Curso Manicuria Profesional Scorpianails",
             unit_price: parseFloat(import.meta.env.VITE_PRECIO),
             quantity: 1,
             email: localStorage.getItem("email"),

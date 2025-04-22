@@ -42,7 +42,7 @@ const AdminClientes = ({ token }) => {
                             <p className={styles.dato}><strong>Email:</strong> {cliente.email}</p>
                             <p className={styles.dato}><strong>Teléfono:</strong> {cliente.telefono}</p>
                             <p className={styles.dato}><strong>Precio:</strong> ${cliente.precio}</p>
-                            <p className={styles.dato}>
+                            <p className={styles.dato} id={styles.enviado}>
                                 <strong>Enviado:</strong> {cliente.enviado ?
                                     <FaCheck style={{ color: 'green' }} /> :
                                     <FaTimes style={{ color: 'red' }} />}

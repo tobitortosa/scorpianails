@@ -46,7 +46,7 @@ function AdminLogin() {
     return (
         <div className={styles.container}>
             <div className={styles.card}>
-                <h2 className={styles.title}>Bienvenido, admin</h2>
+                <h2 className={styles.title}>unas ganas de comer chipa y tomar mate con vos</h2>
                 <button className={`${styles.button} ${styles.buttonClientes}`} onClick={() => setLoader(true)}>Ver clientes</button>
                 {loader && <AdminClientes token={token}/>}
             </div>

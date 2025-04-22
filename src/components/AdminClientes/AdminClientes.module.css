@@ -86,3 +86,12 @@
 .iconWhatsapp:hover {
     color: #128C7E;
 }
+
+#enviado{
+    display: flex;
+    align-items: center;
+}
+
+#enviado strong{
+    margin-right: 5px;
+}
