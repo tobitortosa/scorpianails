@@ -2,6 +2,10 @@ import InfoCard from "../infoCard/InfoCard";
 import styles from "./ProductInfo.module.css";
 import { FaGift } from "react-icons/fa";
 import { AiFillSafetyCertificate } from "react-icons/ai";
+import { BiSolidConversation } from "react-icons/bi";
+import { BiConversation } from "react-icons/bi";
+import { PiGift } from "react-icons/pi";
+import { AiOutlineSafetyCertificate } from "react-icons/ai";
 
 function ProductInfo() {
   return (
@@ -11,77 +15,77 @@ function ProductInfo() {
       </h1>
 
       <h3 className={styles.title} style={{ fontStyle: "italic" }}>
-        Tu puerta de entrada al mundo de las uñas
+        La puerta de entrada al mundo de las uñas
       </h3>
       <div className={styles.content}>
         <div>
           <p className={styles.description}>
-            Te apasionan las uñas y quieres convertir esa pasión en un negocio
-            exitoso? Este curso de manicuría profesional está diseñado
-            especialmente para aquellas personas que desean iniciarse en el
-            fascinante mundo de la manicura. Con un PDF exclusivo y detallado,
-            te ofrezco todos los conocimientos que necesitas para comenzar con
-            confianza y ofrecer servicios de alta calidad.
+            ¿Te apasionan las uñas y querés transformar esa pasión en una verdadera fuente de ingresos?
+            Este curso está diseñado especialmente para quienes desean comenzar en el mundo de la manicura profesional con seguridad, claridad y confianza.
           </p>
           <h4 style={{ fontSize: "20px", textAlign: "center" }}>
-            Qué incluye este curso?
+            ¿Qué vas a encontrar en este curso?
           </h4>
-
+          <p className={styles.description}>
+            Contás con un PDF exclusivo y súper completo que incluye toda la información que necesitás para iniciarte y ofrecer servicios de calidad desde el primer día:
+          </p>
           <ul className={styles.list}>
             <InfoCard
-              title="Anatomía de las uñas:"
-              description="Entiende cómo funcionan las uñas y cómo cuidarlas adecuadamente
-                para garantizar resultados duraderos y saludables."
+              title="Anatomía de las uñas"
+              description="Aprendé cómo están compuestas las uñas, cómo cuidarlas correctamente y por qué esto es clave para lograr resultados duraderos y saludables."
               img="1.jpg"
             />
             <InfoCard
-              title="Manicuria rusa:"
-              description="Aprende paso a paso cómo y por qué usar esta técnica, que se ha
-                convertido en un referente en la industria por sus resultados
-                impecables."
+              title="Limpieza y desinfección"
+              description="Protegé la salud de tus clientas (y la tuya) con prácticas sencillas, efectivas y económicas."
               img="7.jpg"
             />
             <InfoCard
-              title="Esmaltado semipermanente:"
-              description="Conoce el proceso detallado de aplicación y mantenimiento para
-                que tus clientes disfruten de uñas perfectas por más tiempo."
+              title="Manicura rusa"
+              description="Conocé el paso a paso de esta técnica que revolucionó la industria por su precisión y acabado impecable."
               img="3.jpeg"
             />
             <InfoCard
-              title="Nail art (Tendencias):"
-              description="Accede a las últimas tendencias en diseños de uñas, ideales para
-                sorprender a tus clientes y mantenerte a la vanguardia."
+              title="Desprendimientos"
+              description="Aprendé a identificar errores, cómo solucionarlos y convertirlos en oportunidades para seguir creciendo profesionalmente."
               img="4.jpeg"
             />
             <InfoCard
-              title="Retiro seguro del producto:"
-              description="Te enseño cómo retirar correctamente el esmaltado sin dañar las
-                uñas naturales, un paso clave en la manicura profesional."
+              title="Esmaltado semipermanente"
+              description="Dominá esta técnica para que tus clientas disfruten de uñas perfectas por más tiempo."
               img="5.jpg"
             />
             <InfoCard
-              title="Materiales recomendados:"
-              description="Te proporciono una lista con los mejores productos y marcas del
-                mercado, con mis recomendaciones profesionales para que ahorres
-                tiempo y dinero al elegir los productos adecuados para tu
-                negocio."
-              img="8.jpg"
+              title="Nail Art (Tendencias)"
+              description="Inspirate con los diseños que están marcando tendencia y ofrecé un servicio siempre actualizado."
+              img="3.jpeg"
+            />
+            <InfoCard
+              title="Retiro seguro del producto"
+              description="Descubrí cómo retirar el esmaltado de forma correcta, cuidando la uña natural y evitando daños."
+              img="1.jpg"
+            />
+            <InfoCard
+              title="Materiales recomendados"
+              description="Te comparto una lista de productos y marcas que uso y recomiendo para que puedas armar tu kit de trabajo sin gastar de más."
+              img="7.jpg"
             />
           </ul>
           <div style={{ textAlign: "center", fontWeight: "bold" }}>
-            <FaGift style={{fontSize: "35px" }}/>
+            <PiGift style={{ fontSize: "40px" }} />
             <p style={{ marginBottom: "25px" }}>
-              Ademas, como bono adicional, recibirás un regalo sorpresa, ¡algo
-              especial para ti!
+              Un regalo sorpresa, pensado especialmente para tu futuro como manicura.
             </p>
-            <AiFillSafetyCertificate style={{fontSize: "35px" }}/>
+            <BiConversation style={{ fontSize: "40px" }} />
+            <p style={{ marginBottom: "25px" }}>
+              Un mes de consultoría por WhatsApp para que me preguntes cualquier duda que te surja durante tu aprendizaje.
+            </p>
+            <AiOutlineSafetyCertificate style={{ fontSize: "40px" }} />
             <p>
-              Y lo mejor de todo, al completar el curso recibirás un certificado
-              de participación, que avalará tu formación y te permitirá comenzar
-              a ofrecer tus servicios con total confianza y profesionalismo.
+              Ademas, obtendras tu certificado de participación, que avala tu formación y te respalda al momento de ofrecer tus servicios con seguridad y profesionalismo.
             </p>
-            <p style={{ fontSize: "20px" }}>
-              ¡Da el primer paso hacia tu éxito!
+            <p style={{ fontSize: "22px" }}>
+              ¡Da el primer paso hacia tu independencia económica!
             </p>
           </div>
         </div>

@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import MercadoPagoWallet from "../../components/mercado-pago-checkouts/MercadoPagoWallet";
+import { GiScorpion } from "react-icons/gi";
 
 function PaymentStart() {
     const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ function PaymentStart() {
         const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         setIsEmailValid(regex.test(value));
     };
-    
+
     const validatePhone = (value) => {
         const regex = /^(\+\d{1,3}\s?)?\d{1,4}\s?\d{4,5}\s?\d{4}$/;
         setIsPhoneValid(regex.test(value) && value.length >= 10);
@@ -50,7 +51,7 @@ function PaymentStart() {
                                     }}
                                     placeholder="ejemplo@email.com"
                                     className={`${styles.mailInput} ${isEmailValid ? styles.mailValid : styles.mailInvalid
-                                        }`}
+                                    }`}
                                 />
                                 {!isEmailValid && (
                                     <p className={styles.mailErrorText}>
@@ -70,7 +71,7 @@ function PaymentStart() {
                                     }}
                                     placeholder="11 1234-5678"
                                     className={`${styles.phoneInput} ${isPhoneValid ? styles.phoneValid : styles.phoneInvalid
-                                        }`}
+                                    }`}
                                 />
                                 {!isPhoneValid && (
                                     <p className={styles.phoneError}>
@@ -83,15 +84,15 @@ function PaymentStart() {
                                 </p>
                             </div>
                         </div>
-                            <div>
-                                {(isEmailValid && isPhoneValid) ?
-                                    <Link to="/comprar-segunda-parte" onClick={handleSubmit} className={styles.comprar}>Continuar al pago</Link> :
-                                    <Link className={styles.comprarDeshabilitado}>Continuar al pago</Link>
-                                }
+                        <div>
+                            {(isEmailValid && isPhoneValid) ?
+                                <Link to="/comprar-segunda-parte" onClick={handleSubmit} className={styles.comprar}>Continuar al pago</Link> :
+                                <Link className={styles.comprarDeshabilitado}>Continuar al pago</Link>
+                            }
 
-                            </div>
                         </div>
-                        <a id={styles.volver} href="/">Menu</a>
+                    </div>
+                    <a id={styles.volver} href="/">Menu</a>
                 </main>
                 <Footer />
             </div>
