@@ -13,9 +13,10 @@
 
 .formContainer {
     background-color: #1f2937;
-    padding: 2rem;
+    padding: 1.5rem;
     padding-bottom: 3rem;
-    border-radius: 0.5rem;
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
     opacity: .85;
@@ -28,11 +29,8 @@
     font-weight: bold;
     transition: .2s;
     -webkit-user-select: none;
-    /* Safari */
     -ms-user-select: none;
-    /* IE 10 and IE 11 */
     user-select: none;
-    /* Standard syntax */
     text-decoration: none;
     color: #fafafa;
 }
@@ -52,7 +50,7 @@
 .ofertaContainer {
     text-align: center;
     margin-bottom: 40px;
-    padding: 20px 0px;
+    padding: 25px 0px;
     padding-bottom: 50px;
     background: #111;
     border-radius: 10px;
@@ -92,4 +90,15 @@
 .comprar:hover {
     background: linear-gradient(90deg, #00c200e0, #00ee08e0);
     transform: translateY(-2px);
+}
+
+#portada {
+    width: 100%;
+    border-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.portadaContainer {
+    height: 100%;
 }

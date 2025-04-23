@@ -11,6 +11,9 @@ function PaymentFormNew() {
         <h3 style={{ textAlign: "center" }}>
           ¿Querés mejorar tus habilidades en Manicuría?
         </h3>
+        <div className={styles.portadaContainer}>
+          <img src="portada.png" id={styles.portada} />
+        </div>
         <h4 style={{ textAlign: "center" }}>
           Este PDF es ideal para quienes recién empiezan y también para quienes ya dieron sus primeros pasos y quieren seguir aprendiendo.
           Vas a encontrar técnicas, consejos y recomendaciones profesionales para perfeccionar tu trabajo y ofrecer un servicio que enamore y fidelice a tus clientas.
