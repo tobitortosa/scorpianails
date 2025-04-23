@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from "./AdminLogin.module.css";
 import AdminClientes from '../../components/AdminClientes/AdminClientes';
+import { Link } from 'react-router-dom';
 
 function AdminLogin() {
     const [username, setUsername] = useState('');
@@ -46,10 +47,11 @@ function AdminLogin() {
     return (
         <div className={styles.container}>
             <div className={styles.card}>
-                <h2 className={styles.title}>unas ganas de comer chipa y tomar mate con vos</h2>
+                <h2 className={styles.title}>Panel Admin</h2>
                 <button className={`${styles.button} ${styles.buttonClientes}`} onClick={() => setLoader(true)}>Ver clientes</button>
                 {loader && <AdminClientes token={token}/>}
             </div>
+            <Link to="/" id={styles.cerrarSesionBtn}>Menu</Link>
             <button id={styles.cerrarSesionBtn} onClick={handleCerrarSesion}>Cerrar Sesion</button>
         </div>
     );

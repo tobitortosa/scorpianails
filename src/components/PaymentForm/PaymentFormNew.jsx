@@ -18,12 +18,14 @@ function PaymentFormNew() {
             Empezá tu negocio y convertite en esa manicura que siempre soñaste ser.
           </p>
         </h4>
-        <h3 style={{ textAlign: "center", color: "#00ee08e0", marginBottom: "40px" }}>
-          Precio: {precio} ARS
-        </h3>
-        <div style={{ textAlign: "center" }}>
+        <div className={styles.ofertaContainer}>
+          <h3 className={styles.ofertaTitulo}>
+            <span>🔥 45% OFF 🔥</span>
+            <br />
+            {precio} ARS
+          </h3>
           <Link className={styles.comprar} to="/comprar-primera-parte">
-            COMPRAR
+            Comprar ahora
           </Link>
         </div>
       </div>
