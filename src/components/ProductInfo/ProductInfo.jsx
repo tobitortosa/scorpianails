@@ -67,7 +67,7 @@ function ProductInfo() {
             />
             <InfoCard
               title="Materiales recomendados"
-              description="Te comparto una lista de productos y marcas que uso y recomiendo para que puedas armar tu kit de trabajo sin gastar de más."
+              description="Incluye una lista de productos que uso y recomiendo para que armes tu kit sin gastar de más. (Marcas recomendadas solo para Argentina)"
               img="7.jpg"
             />
           </ul>
