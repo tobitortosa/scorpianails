@@ -24,7 +24,8 @@ const MercadoPagoWallet = () => {
             unit_price: parseFloat(import.meta.env.VITE_PRECIO),
             quantity: 1,
             email: localStorage.getItem("email"),
-            telefono: localStorage.getItem("telefono")
+            telefono: localStorage.getItem("telefono"),
+            nombreCompleto: localStorage.getItem("nombreCompleto")
         }, {
             headers: {
                 "Content-Type": "application/json",
